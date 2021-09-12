@@ -1,0 +1,45 @@
+.experiences {
+
+    &__list {
+        margin-top: 60px;
+
+        display: grid;
+        grid-gap: 40px;
+    }
+}
+
+.experience {
+    align-items: flex-start;
+
+    &__desc {
+        list-style: none;
+
+        display: grid;
+        grid-gap: 10px;
+
+        &--source {
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &--cource {
+            color: $black;
+
+            text-decoration: none;
+        
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &--work {
+            font-size: 14px;
+        
+            @media (max-width: 375px) {
+                font-size: 12px;
+            }
+        }
+    }
+}

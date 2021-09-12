@@ -1,0 +1,74 @@
+.skills {
+    background-color: $grey;
+
+    &__list {
+        margin-top: 60px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 100px;
+    
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media(max-width: 480px) {
+            grid-gap: 50px;
+            grid-template-columns: 1fr;
+
+            margin-top: 40px;
+        }
+    }
+}
+
+.skill {
+    display: flex;
+    grid-gap: 20px;
+
+    &__percentage {
+        font-size: 18px;
+        font-weight: bold;
+
+        color: $yellow;
+    }
+
+    &__technology {
+        font-size: 18px;
+        font-weight: bold;
+
+        color: $skill;
+
+        text-transform: uppercase;
+    }
+}
+
+.progress-bar {
+
+    &__track {
+        height: 5px;
+        background: $skill;
+        margin-top: 20px;
+    }
+
+    &__line {
+        height: 5px;
+        background-color: $yellow;
+    
+        &--html,
+        &--css {
+            width: 90%;
+        }
+
+        &--js {
+            width: 30%;
+        }
+
+        &--git {
+            width: 50%;
+        }
+
+        &--react {
+            width: 10%;
+        }
+    }
+}

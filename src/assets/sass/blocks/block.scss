@@ -1,0 +1,32 @@
+.block {
+    padding: 100px 0px;
+
+    @media (max-width: 768px) {
+        padding: 75px 0px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 50px 0px;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: center;
+    
+        @media (max-width: 480px) {
+            font-size: 24px;
+        }
+    }
+
+    &__line {
+        width: 10%;
+        height: 1px;
+
+        margin: 30px auto;
+
+        background: rgba(135, 135, 135, 0.5);
+    }
+}

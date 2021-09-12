@@ -1,0 +1,86 @@
+.preview {
+    background: url('../img/preview.jpg') no-repeat 50% 0px;
+    background-size: cover;
+
+    height: 100vh;
+
+    position: relative;
+
+    &__overlay {
+        background-color: rgba(44, 62, 80, 0.5);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    &__intro {
+        color: $white;
+
+        width: 100%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        text-align: center;
+
+        @media (max-width: 576px) {
+            top: 40%;
+        }
+
+        &--title {
+            font-size: 16px;
+        
+            @media (max-width: 375px) {
+                font-size: 15px;
+            }
+        }
+
+        &--role {
+            margin-top: 15px;
+
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+        
+            @media(max-width: 480px) {
+                font-size: 26px;
+            }
+        }
+    }
+
+    &__navigate {
+        display: flex;
+        align-items: center;
+
+        padding: 15px;
+
+        border: 2px solid $white;
+        border-radius: 50%;
+
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        transition: .3s ease;
+
+        @media (max-width: 576px) {
+            bottom: 15%;
+        }
+
+        &:hover {
+            background-color: #40b671;
+        }
+
+        &--img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
